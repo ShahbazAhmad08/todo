@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './TaskTracker.css'
-const TaskTracker = () => {
+import './Todo.css'
+const Todo = () => {
     const [users,setusers]=useState([]);
     const[name, setName]=useState("");
     const[editIndex,setEditIndex]=useState(-1);
@@ -56,4 +56,4 @@ const TaskTracker = () => {
   )
 }
 
-export default TaskTracker
+export default Todo

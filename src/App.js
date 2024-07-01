@@ -1,9 +1,9 @@
-import TaskTracker from './components/TaskTracker';
+import Todo from './components/Todo';
 
 function App() {
   return (
     <div className="App">
-     <TaskTracker/>
+     <Todo/>
     </div>
   );
 }
