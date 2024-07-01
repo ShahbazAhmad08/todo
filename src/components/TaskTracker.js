@@ -29,8 +29,8 @@ const TaskTracker = () => {
         setusers(updateUser);
     }
   return (
-    <div className='TaskTracker'>
-        <h2 className='heading'>TaskTracker App</h2>
+    <div className='todor'>
+        <h2 className='heading'>To Do App</h2>
         <div className='add-user'> 
          <input type='text'
                 value={name}
