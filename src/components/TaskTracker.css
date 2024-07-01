@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading {
+  background-color: #0d2f2c;
+  padding: 10px 20px;
+  border-radius: 7px 35px;
+  color: rgb(198, 135, 135);
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.TaskTracker {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  background-color: rgb(53, 91, 91);
+  padding-top: 10vh;
+  color: aliceblue;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.input-user {
+  all: unset;
+  height: 30px;
+  width: 50vw;
+  border: 1px solid white;
+  margin: 2px;
+  padding: 8px 30px 10px 15px;
+}
+.user-list {
+  width: 97vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.user-list p {
+  width: 55vw;
+  border: 1px solid rgba(255, 255, 255, 0.206);
+  min-height: 35px;
+  background-color: rgb(14, 47, 59);
+  font-size: 22px;
+  padding-left: 32px;
+  font-family: cursive;
+  overflow: hidden;
+}
+.add {
+  width: 30px;
+  height: 38px;
+  padding-top: 18px;
+  margin: 2px 3px 3px -30px;
+}
+.delete,
+.edit {
+  width: 30px;
+  height: 38px;
+  text-align: center;
+  float: right;
+  margin-top: 1vw;
+  position: relative;
+  top: 10px;
+}
+.add:active {
+  color: green;
+}
+.delete:active {
+  color: red;
+}
+.edit:active {
+  color: rgb(17, 147, 41);
+}
+.task {
+  width: 100%;
+  min-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  position: relative;
+  left: 12px;
+  top: -8px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  opacity: 0.9;
+}
+
+.checkbox:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: rgb(215, 45, 45);
+}
+
+.checkbox:checked:before {
+  background-color: #15cd28;
+  border-color: #23c41d;
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  width: 8px;
+  height: 15px;
+  border: solid rgb(235, 236, 246);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.checkbox:checked:after {
+  display: block;
+}
