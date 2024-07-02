@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Todo.css'
+import './components/Todo.css'
 const Todo = () => {
     const [users,setusers]=useState([]);
     const[name, setName]=useState("");
