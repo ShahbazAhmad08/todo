@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './components/Todo.css'
+import './Todo.css'
 const Todo = () => {
     const [users,setusers]=useState([]);
     const[name, setName]=useState("");
@@ -29,7 +29,7 @@ const Todo = () => {
         setusers(updateUser);
     }
   return (
-    <div className='todor'>
+    <div className='todo'>
         <h2 className='heading'>To Do App</h2>
         <div className='add-user'> 
          <input type='text'
